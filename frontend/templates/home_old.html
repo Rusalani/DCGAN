@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Face Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/style.css"> 
+  </head>
+  <body>
+    
+    <form class="grid" method="POST">
+		{% if name %}
+		<!-- <h1> Query {{name}} </h1> -->
+		<img src="static\images\test.png" alt="example2">
+		{% else %}
+		<h1> Example </h1>
+		<img src="static\images\59149.png" alt="example">
+		{% endif %}
+		
+		
+		<label for="name">Enter your query:</label>
+        <input type="text" id="name" name="name">
+
+        <center><input class="file_submit" type="Submit"></center>
+  </body>
+</html>
